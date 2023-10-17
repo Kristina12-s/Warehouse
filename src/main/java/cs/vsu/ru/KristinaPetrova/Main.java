@@ -1,13 +1,16 @@
 package cs.vsu.ru.KristinaPetrova;
 
 import cs.vsu.ru.KristinaPetrova.base.*;
-import cs.vsu.ru.KristinaPetrova.base.models.*;
-import cs.vsu.ru.KristinaPetrova.generator.Generator;
 import cs.vsu.ru.KristinaPetrova.json.Deserializer;
 import cs.vsu.ru.KristinaPetrova.json.Serializer;
+import cs.vsu.ru.KristinaPetrova.logic.Logic;
+import cs.vsu.ru.KristinaPetrova.generator.Generator;
+import cs.vsu.ru.KristinaPetrova.models.Customer;
+import cs.vsu.ru.KristinaPetrova.models.Product;
+import cs.vsu.ru.KristinaPetrova.models.Supplier;
+import cs.vsu.ru.KristinaPetrova.models.Warehouse;
 
 import java.io.File;
-import java.util.Map;
 import java.util.Objects;
 import java.util.Scanner;
 
