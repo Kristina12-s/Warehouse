@@ -2,7 +2,7 @@ package cs.vsu.ru.KristinaPetrova.generator;
 
 
 
-import cs.vsu.ru.KristinaPetrova.base.Database;
+import cs.vsu.ru.KristinaPetrova.Database;
 import cs.vsu.ru.KristinaPetrova.models.*;
 
 import java.util.Date;

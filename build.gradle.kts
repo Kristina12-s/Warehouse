@@ -13,6 +13,7 @@ dependencies {
     implementation(project(":models"))
     implementation(project(":database"))
     implementation(project(":json"))
+    implementation(project(mapOf("path" to ":database_sql")))
 
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")

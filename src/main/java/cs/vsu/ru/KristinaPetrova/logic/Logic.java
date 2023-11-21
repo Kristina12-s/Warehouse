@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import cs.vsu.ru.KristinaPetrova.base.Database;
+import cs.vsu.ru.KristinaPetrova.Database;
 import cs.vsu.ru.KristinaPetrova.models.Arrival;
 import cs.vsu.ru.KristinaPetrova.models.Order;
 import cs.vsu.ru.KristinaPetrova.models.Product;

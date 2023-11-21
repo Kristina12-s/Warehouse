@@ -1,6 +1,5 @@
 package cs.vsu.ru.KristinaPetrova;
 
-import cs.vsu.ru.KristinaPetrova.base.*;
 import cs.vsu.ru.KristinaPetrova.json.Deserializer;
 import cs.vsu.ru.KristinaPetrova.json.Serializer;
 import cs.vsu.ru.KristinaPetrova.logic.Logic;

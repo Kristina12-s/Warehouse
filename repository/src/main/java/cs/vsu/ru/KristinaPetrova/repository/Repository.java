@@ -10,4 +10,6 @@ public interface Repository<T extends Identifiable> {
     List<T> getAll();
     void update(int id, T newItem) throws IllegalArgumentException;
     void delete(int id) throws IllegalArgumentException;
+
+    void deleteAll();
 }

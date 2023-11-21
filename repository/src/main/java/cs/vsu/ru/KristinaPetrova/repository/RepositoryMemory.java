@@ -54,4 +54,9 @@ public class RepositoryMemory<T extends Identifiable> implements Repository<T> {
         }
         throw new IllegalArgumentException("Object with ID " + id + " not found.");
     }
+
+    @Override
+    public void deleteAll() {
+        items.clear();
+    }
 }

@@ -1,9 +1,11 @@
-package cs.vsu.ru.KristinaPetrova.base;
+package cs.vsu.ru.KristinaPetrova;
 import cs.vsu.ru.KristinaPetrova.models.*;
 
 import java.util.List;
 
 public interface Database {
+    void deleteAll();
+
     // Для объектов типа Arrival
     void createArrival(Arrival arrival);
     List<Arrival> getAllArrivals();

@@ -1,4 +1,4 @@
-package cs.vsu.ru.KristinaPetrova.base;
+package cs.vsu.ru.KristinaPetrova;
 
 
 import cs.vsu.ru.KristinaPetrova.repository.Repository;
@@ -57,6 +57,16 @@ public class DatabaseMemory implements Database {
         if(warehouses.getById(order.getWarehouseId()) == null){
             throw new IllegalArgumentException("Illegal warehouse ID");
         }
+    }
+
+    @Override
+    public void deleteAll() {
+        orders.deleteAll();
+        arrivals.deleteAll();
+        customers.deleteAll();
+        products.deleteAll();
+        suppliers.deleteAll();
+        warehouses.deleteAll();
     }
 
     @Override

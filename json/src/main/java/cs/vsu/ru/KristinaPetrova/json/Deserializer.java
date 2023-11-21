@@ -2,7 +2,7 @@ package cs.vsu.ru.KristinaPetrova.json;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import cs.vsu.ru.KristinaPetrova.base.Database;
+import cs.vsu.ru.KristinaPetrova.Database;
 import cs.vsu.ru.KristinaPetrova.models.*;
 
 import java.io.File;
