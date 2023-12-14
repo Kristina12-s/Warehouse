@@ -12,7 +12,7 @@ public class Product implements Identifiable {
     protected String name;
     protected String description;
 
-    protected double price;
+    protected Double price;
 
     public Product(String name, String description, double price) {
         this.id = null;

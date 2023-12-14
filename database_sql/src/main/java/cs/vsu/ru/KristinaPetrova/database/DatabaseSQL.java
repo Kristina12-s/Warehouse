@@ -11,12 +11,12 @@ import java.util.List;
 
 public class DatabaseSQL implements Database {
 
-    Repository<Customer> customers;
-    Repository<Order> orders;
-    Repository<Product> products;
-    Repository<Supplier> suppliers;
-    Repository<Warehouse> warehouses;
-    Repository<Arrival> arrivals;
+    public final Repository<Customer> customers;
+    public final Repository<Order> orders;
+    public final Repository<Product> products;
+    public final Repository<Supplier> suppliers;
+    public final Repository<Warehouse> warehouses;
+    public final Repository<Arrival> arrivals;
 
     private static DatabaseSQL INSTANCE;
 

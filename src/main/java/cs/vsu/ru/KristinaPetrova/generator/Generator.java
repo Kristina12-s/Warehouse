@@ -37,7 +37,7 @@ public class Generator {
         for (int i = 0; i < 1000; i++) {
             String name = "Product "+ i;
             String desc = "Great description: " + random.nextInt(0, 100000);
-            double price = random.nextDouble(0, 70000);
+            double price = random.nextDouble(0, 700);
             db.createProduct(new Product(name, desc, price));
         }
         // warehouses 100

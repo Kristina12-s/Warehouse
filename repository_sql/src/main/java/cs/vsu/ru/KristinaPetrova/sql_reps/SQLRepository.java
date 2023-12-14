@@ -68,7 +68,6 @@ abstract class SQLRepository<T extends Identifiable> implements Repository<T> {
             }
         }
         queryString.append(" );");
-        System.out.println(queryString);
 
         try {
             PreparedStatement p = connector.makeUpdate(queryString.toString());
@@ -141,7 +140,9 @@ abstract class SQLRepository<T extends Identifiable> implements Repository<T> {
             String column = getColumnNames()[i];
             queryString.append(column);
             queryString.append(" = ");
+            queryString.append("'");
             queryString.append(getColumns(newItem)[i]);
+            queryString.append("'");
 
             if (i != getColumnNames().length - 1) {
                 queryString.append(", ");
@@ -149,6 +150,7 @@ abstract class SQLRepository<T extends Identifiable> implements Repository<T> {
         }
 
         queryString.append(" where id = ").append(id);
+        System.out.println(queryString);
         try {
             PreparedStatement p = connector.makeUpdate(queryString.toString());
             int affectedRows = p.getUpdateCount();

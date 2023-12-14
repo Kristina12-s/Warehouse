@@ -13,12 +13,12 @@ import java.util.Date;
 public class Order implements Identifiable {
     protected Integer id;
     protected Date orderDate;
-    protected int quantity;
-    protected double price;
+    protected Integer quantity;
+    protected Double price;
     protected String customerAddress;
-    protected int customerId;
-    protected int productId;
-    protected int warehouseId;
+    protected Integer customerId;
+    protected Integer productId;
+    protected Integer warehouseId;
 
     public Order(Date orderDate, int quantity, double price, String customerAddress, int customerId, int productId,
                  int warehouseId) {

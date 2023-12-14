@@ -3,6 +3,8 @@ package cs.vsu.ru.KristinaPetrova.models;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
+
 import java.util.Date;
 
 @Getter
@@ -10,14 +12,14 @@ import java.util.Date;
 @NoArgsConstructor
 public class Arrival implements Identifiable {
     protected Integer id;
-    protected int quantity;
-    protected double price;
+    protected Integer quantity;
+    protected Double price;
     protected Date date;
 
-    protected int supplierId;
+    protected Integer supplierId;
 
-    protected int warehouseId;
-    protected int productId;
+    protected Integer warehouseId;
+    protected Integer productId;
 
     public Arrival(int quantity, double price, Date date, int supplierId, int warehouseId, int productId) {
         this.id = null;
@@ -31,11 +33,11 @@ public class Arrival implements Identifiable {
 
     @Override
     public Integer getID() {
-        return 0;
+        return id;
     }
 
     @Override
     public void setID(int id) {
-
+        this.id = id;
     }
 }
